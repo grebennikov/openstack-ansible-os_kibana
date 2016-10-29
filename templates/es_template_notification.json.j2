@@ -104,8 +104,8 @@
                  }
             }
         },
-        "number_of_shards": <%= @number_of_shards %>,
-        "number_of_replicas": <%= @number_of_replicas %>
+        "number_of_shards": {{ es_shards_number.stdout }},
+        "number_of_replicas": {{ es_replicas_number.stdout }}
     },
-    "template": "<%= @index_prefix %>-*"
+    "template": "notification-*"
 }

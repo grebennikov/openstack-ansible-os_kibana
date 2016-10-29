@@ -131,9 +131,9 @@
       }
     },
     "settings": {
-        "number_of_shards": <%= @number_of_shards %>,
+        "number_of_shards": {{ es_shards_number.stdout }},
         "auto_expand_replicas": "0-all"
     },
-    "template": "<%= @template %>"
+    "template": ""
 }
 
