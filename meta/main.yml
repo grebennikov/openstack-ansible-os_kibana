@@ -27,5 +27,4 @@ galaxy_info:
     - rackspace
     - kibana
 
-dependencies:
-  - pip_lock_down
+dependencies: []
